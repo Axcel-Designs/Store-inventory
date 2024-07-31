@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>Chart</title>
+</head>
+<body>
+    <header>
+        <div class="profile-thumbnail"> $Yourname</div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Dashboard</a></li>
+                <li><a href="../../chart/index.html">Chart</a></li>
+                <li><a href="index.html">Records</data></a></li>
+                <li><a href="../../account/index.html">Account</a></li>
+            </ul>
+        </nav>
+        <div id="ham">
+            <img src="" alt="ham">
+        </div>   
+    </header>
+    <br>
+    <main>
+        <div class="banner">
+            <P>Date: <span id="dateHere"></span></P> 
+        </div>
+        <div class="hero">
+            <div class="input-box">
+                <label for="no-products">Number of Products</label>
+                <input type="number" name="no-products">
+            </div>
+            <div class="input-box">
+                <label for="product-name">Name</label>
+                <input type="text" name="product-name">
+            </div>
+            <div class="input-box">
+                <label for="amount">Amount</label>
+                <input type="number" name="amount">
+            </div>
+      </div>
+        <!-- table -->
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>00000</td>
+                        <td>cowbell</td>
+                        <td>food</td>
+                        <td>500</td>
+                        <td>02/03/2024</td>
+                    </tr>
+                    <tr>
+                        <td>00000</td>
+                        <td>cowbell</td>
+                        <td>food</td>
+                        <td>500</td>
+                        <td>02/03/2024</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <br>
+    <footer>
+        Acha Kelechi Excel |<a href="#"> axceldesigns@gmail.com</a>
+    </footer>
+    <script>
+        theDate();
+        function theDate(){
+            var date = new Date();
+            var months = [0,1,2,3,4,5,7,8,9,10,11,12];
+            var currentDate = date.getDate();
+            var month = months[date.getMonth()];
+            var year = date.getFullYear();
+             
+            var todaysDate = document.getElementById("dateHere").innerHTML = currentDate +"/" + month  + "/" + year;
+        }
+    </script>
+</body>
+</html>

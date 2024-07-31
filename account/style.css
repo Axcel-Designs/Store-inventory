@@ -1,0 +1,63 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --colr:#234;
+    --colr2:rgb(248, 235, 235);
+    --colr3:rgb(126, 133, 126);
+    --colr4: rgb(231, 231, 231);
+}
+/* body */
+
+section{
+    width: 80%;
+    min-height: 100vh;
+    box-sizing:border-box ;
+    margin: 5vh auto 0 auto;
+    background-color: aqua;
+    background-image:linear-gradient(to bottom , rgb(248, 235, 235), rgb(126, 133, 126), rgb(231, 231, 231));
+    padding: 2vw 1vw;
+    border-radius: 15px;
+    .profile-pic{
+        display: flex;
+    }
+    input[type=file]{
+        width:15vw;
+        background-color: white;
+        height: 15vw;
+        margin: auto;
+        align-items: center; 
+        border-radius: 100%;
+    }
+    div{margin: 9vh 0;}
+}
+    button{
+        border: none;
+        border-radius: 3vw;
+        background-color:black;
+        color:white;
+        margin: 1vh 2vw 0 0 ;
+        padding: .5vh 1.5vw;
+        cursor: pointer;
+    }
+    button:hover{background-color: beige; color: black; }
+    button:active{transform: scale(1.1,1.1);}
+    .delete,.logout:hover{background-color: red;}
+
+/* media queries */
+@media only screen and (min-width:1245px){
+    /*  */
+}
+
+@media only screen and (min-width:1080px) and (max-width:1244px) {
+    section{  padding: 2vw 1vw;
+    }
+}
+@media only screen and (min-width:721px ) and (max-width:1079px){
+      section{  padding: 1vw 2vw;     
+    }
+    
+}
+@media only screen and (max-width:720px) {
+    section{  padding: 4vw 5vw; }
+}
+     

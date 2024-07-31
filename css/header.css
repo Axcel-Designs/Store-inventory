@@ -1,0 +1,78 @@
+*{ margin: 0; padding: 0;  list-style: none; text-decoration: none; color:var(--black); font-family: poppins; }
+:root{
+    --white:#fff;
+    --black:#000;
+    --colr:#234;
+    --colr2:rgb(248, 235, 235);
+    --colr3:rgb(126, 133, 126);
+    --colr4: rgb(231, 231, 231);
+}
+h3{ background:linear-gradient(90, blue, red);}
+/* header     */
+header{
+    box-sizing: border-box;
+    background-color: var(--colr4);
+    border-radius: 2px;
+    min-height: 10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    #ham{display:none;} 
+    .profile-thumbnail{ margin: 1vh 2vw; }
+    nav{
+        justify-self: flex-end;
+        align-self:self-end;
+        justify-self:self-end;
+        opacity: 0.9;
+        margin: 1vh 2vw;
+        ul{ 
+            border: 1px solid ;
+            border-radius: 2vw;
+            padding: 0vh 3vw;
+            display: flex;
+            justify-content:space-between;
+            width: 40vw;   
+        }
+        ul:hover{color: var(--colr3);  }   
+        li{transition: box-shadow 0.25s linear, padding 0.2s linear ;padding: 1vh 0.5vw;  }
+        li:hover{
+            box-sizing: border-box;
+            border: none;
+            box-shadow: -10px 0 20px; 
+            border-radius: 2vw;  
+        }
+        li:active{
+            background-color: white;
+        }
+    }
+}
+/* body */
+main{ width:90%; margin: auto; min-height: 65vh;}
+.banner{
+    margin: 2vw;
+    width: fit-content;
+    padding: .5vh 1vw;
+    border: 1px solid var(--colr3);
+    border-radius: 5vw;
+}
+
+/* media queries */
+@media only screen and (min-width:1245px){
+    /* header{background-color: yellow}    */
+    header nav ul{ width: fit-content;gap: 20px} 
+}
+
+@media only screen and (min-width:1080px) and (max-width:1244px) {
+    /* header{background-color: red;} */
+    header nav ul{ width: 30vw;}
+}
+@media only screen and (min-width:721px ) and (max-width:1079px){
+    /* header{background-color: orange} */
+}
+@media only screen and (max-width:720px) {
+    header #ham{
+        display: flex;
+        margin:1vh 4vw;}
+    nav{display: none;}
+}
+     
