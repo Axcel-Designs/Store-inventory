@@ -31,16 +31,19 @@ form{
         color:white;
         padding: .5vh 1.5vw;
         cursor: pointer;
-        a{
-            
-        }
     }
     .button:hover{background-color: beige; color: black; }
     .button:active{transform: scale(1.1,1.1);}
 }
 @media only screen and (min-width:800Px) {
     form{
-        max-width: 40vw;
+        max-width: 50vw;
+    }
+    
+}
+@media only screen and (max-width:700Px) {
+    form{
+       width: 90%;
     }
     
 }
