@@ -1,72 +1,48 @@
-h3,h4,h5,h6,span{font-family: sans-serif; color: var(--colr);}
-:root{
-    --white:#fff;
-    --black:#000;
-    --colr:#234;
-    --colr2:rgb(248, 235, 235);
-    --colr3:rgb(126, 133, 126);
-    --colr4: rgb(231, 231, 231);
-}
-/* body */
-/* cheecker ".banner" in directory ../css/header.css */
-section{
-    box-sizing:border-box ;
+*{ margin: 0; padding: 0;  box-sizing: border-box; text-decoration: none;}
+body{
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin: 5vh auto 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+}
+form{
     background-color: aqua;
-    background-image:linear-gradient(to bottom , rgb(248, 235, 235), rgb(126, 133, 126), rgb(231, 231, 231));
-    padding: 2vw 1vw;
+    background-image:linear-gradient(to bottom right, rgb(248, 235, 235), rgb(126, 133, 126), rgb(231, 231, 231));
+    padding: 3vw;
     border-radius: 15px;
-    .board{
+    width: 60vw;
+    h1{ text-align: center; margin: 2vh; font-size: 2em;}
+    p{ text-align: center; margin: 2vh}
+    a{font-weight: bold; color: rgb(41, 0, 41);}
+    .forgot-password{
+        margin: 2vh 0;
+    }
+    input{
+        border-radius: 5px;
+        border: none;
+        outline: none;
         padding: 1vw;
-        width: 200px;
-        background-color: var(--colr4);
-        box-shadow:var(--colr4) 0 0 25px;
-        border-radius: 2vw;
+        margin: 2vh 0;
+        width: 100%;
     }
-    .dashboard-btn{
-        padding: 1vw;
-        width: fit-content;
-        button{
-            background-color:black;
-            margin: auto;
-            color:white;
-            padding: .5vh 1.5vw;
-            cursor: pointer;
-            border: none;
-            border-radius: 2vw;
-        }
-        button:hover{background-color: beige; color: black; }
-        button:active{transform: scale(1.1,1.1);}
+    input[type=submit]{
+        margin-top: 5vh;
+        padding: .5vh 1.5vw;
     }
-}
-
-/* media queries */
-@media only screen and (min-width:1245px){
-/*  */
-}
-@media only screen and (min-width:1080px) and (max-width:1244px) {
-    section{  padding: 2vw 1vw;
-        .board, .dashboard-btn{margin: 2vw 9vw}
+    .button{
+        background-color:black;
+        color:white;
+        margin: 5vh 2vw 0 0 ;
+        padding: 1vh 2vw;
+        cursor: pointer;
     }
+    .button:hover{background-color: beige; color: black; }
+    .button:active{transform: scale(1.1,1.1);}  
 }
-@media only screen and (min-width:721px ) and (max-width:1079px){
-      section{  padding: 1vw 2vw; 
-        .board, .dashboard-btn{margin: 2vw 2vw}    
-    }   
-}
-@media only screen and (max-width:720px) {
-    section{  padding: 4vw 5vw;
-        .board, .dashboard-btn{margin:1vw 1vw;}
+@media only screen and (min-width:800Px) {
+    form{
+        max-width: 40vw;
     }
-}
-@media  screen and (max-width:559px) {
-    section{
-        justify-content: space-around;
-        flex-flow: column wrap; 
-        align-items: center;
-        .dashboard-btn button{ margin: 0vw auto; }
-    }   
+    
 }
