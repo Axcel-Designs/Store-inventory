@@ -6,7 +6,6 @@
     --colr3:rgb(126, 133, 126);
     --colr4: rgb(231, 231, 231);
 }
-
 /* body */
 .hero{
     box-shadow: 0px 0px 10px;
@@ -60,7 +59,7 @@ tr:nth-child(even){
 
 @media only screen and (min-width:1080px) and (max-width:1244px) {
 }
-@media only screen and (min-width:721px ) and (max-width:1079px){
+@media only screen and (min-width:721px) and (max-width:1079px){
 }
 @media only screen and (max-width:720px) {
     table{
