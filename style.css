@@ -10,9 +10,12 @@ h3,h4,h5,h6,span{font-family: sans-serif; color: var(--colr);}
 /* body */
 /* cheecker ".banner" in directory ../css/header.css */
 .hero{
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
-    margin: 2vh 5vw;
+    padding: 2vh 5vw;
     justify-content: space-between;
+    background-color: white;
     button {
         padding: 1vh 1.5vw;
         cursor: pointer;
@@ -26,6 +29,7 @@ h3,h4,h5,h6,span{font-family: sans-serif; color: var(--colr);}
         border: 2px solid var(--colr3) ;
     }
 }
+body{    background-color: var(--colr);}
 .wlm-back{
     box-sizing: border-box;
     width: 100%;
@@ -72,23 +76,16 @@ section{
 }
 @keyframes dance {
     0%{
-        /* position:absolute; */
         top: 10px;
-       
-
     }
     50%{
-        /* position:absolute; */
         top:20vh;
         transform: rotatex(90deg);
-        /* left: 100vw; */
     }
     100%{
-            /* position:absolute; */
-            top: 10px;
+        top: 10px;
     }
 }
-
 
 /* media queries */
 @media only screen and (min-width:1245px){

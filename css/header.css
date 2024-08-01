@@ -48,12 +48,14 @@ header{
 }
 /* body */
 main{ width:90%; margin: auto; min-height: 40vh;}
+.banner-container{background-color: #fff;}
 .banner{
-    margin: 2vw;
+    margin: 0vw 2vw;
     width: fit-content;
     padding: .5vh 1vw;
     border: 1px solid var(--colr3);
     border-radius: 5vw;
+    background-color: var(--white);
 }
 
 /* media queries */
