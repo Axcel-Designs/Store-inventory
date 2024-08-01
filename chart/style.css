@@ -29,6 +29,7 @@ button{
     color:white;
     padding: .5vh 2vw;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 .delete{background-color: red;padding: .5vh .75vw;}
 button:hover{background-color: beige; color: black;border: 1px solid; }

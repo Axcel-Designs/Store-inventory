@@ -4,20 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Dashboard</title>
 </head>
 <body>
-    <section>        
-        <form action="" method="post" autocomplete="on" >
-            <h1>Login</h1>
-            <label for="username" class="field-label">Username</label> <br>
-            <input type="text" name="username" class="field-value" id="username" placeholder="Enter Username" required><br>
-            <label for="password" class="field-label">Password</label><br>
-            <input type="password" name="password" class="field-value" id="password" placeholder="Enter Password" required><br>
-            <div class="btn"><a class="button" href="dashboard/index.html"  type="submit">Login</a></div>
-            <div class="forgot-password"><a href="#">forgot password?</a></div>
-            <div><p>Don't have an account? <a href="signup/signup.html">Sign Up</a></p></div>
-        </form>  
-    </section>
+    <header>
+        <div class="profile-thumbnail"> $Yourname</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="chart/chart.html">Chart</a></li>
+                <li><a href="records/product-records/index.html">Records</data></a></li>
+                <li><a href="account/account.html">Account</a></li>
+            </ul>
+        </nav>
+        <div id="ham">
+            <img src="" alt="ham">
+        </div>   
+    </header>
+    <br>
+    <div class="banner">
+        <P>Date: <span id="dateHere"></span></P> 
+    </div>
+    <div class="hero">
+        <div></div>
+        <div>
+            <a href="login/login.html"><button>login</button></a>
+        </div>
+    </div>
+    <article>
+        <div class="wlm-back">
+            <h4>WELCOME BACK</h4>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error debitis vel voluptatibus commodi cumque magnam voluptatum corrupti, inventore aliquid eveniet dolore incidunt, repudiandae, fuga nesciunt veritatis architecto aperiam amet minus!</p>
+            </div>           
+        </div>
+    </article>
+    <main>
+        <section>
+            <div class="board">
+                <h4>Number of Products</h4>
+                <h4>
+                    <span id="total-rev">0</span>
+                </h4>
+            </div>
+            <div class="board">
+                <h4>Total costs of Products</h4>
+                <h4>
+                    <span>₦ </span><span id="total-rev">0</span>
+                </h4>
+            </div>
+            <div class="board">
+                <h4>Total revenue</h4>
+                <h4>
+                    <span>₦ </span><span id="total-rev">0</span>
+                </h4>
+            </div>
+            <div class="dashboard-btn">
+                <button><a href="../chart/chart.html">Add Product</a></button>
+            </div>
+        </section>
+        <div class="contact"></div>
+    </main>
+    <br>
+    <!-- footer -->
+    <footer>
+            <div class="footer-tp">
+                <div class="footr-menu">
+                    <ul>
+                        <li><a href="chart/chart.html">Chart</a></li>
+                        <li><a href="records/product-records/index.html">Records</data></a></li>
+                        <li><a href="account/account.html">Account</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">contact us</a></li>  
+                    </ul>
+                </div>
+                <div class="footr-rgt">
+                    <p>This is a shore inventory application that keeps track of the product, it also provides a robust range of set of storing the information. </p>
+                    <p>Version beta 3.082</p>
+                </div>
+            </div>
+            <div class="footer-btm">
+                <P>Acha Kelechi Excel |<a href="#"> axceldesigns@gmail.com</a></P>
+            </div>
+    </footer>
+    <script>
+        theDate();
+        function theDate(){
+            var date = new Date();
+            var months = [0,1,2,3,4,5,7,8,9,10,11,12];
+            var currentDate = date.getDate();
+            var month = months[date.getMonth()];
+            var year = date.getFullYear();
+             
+            var todaysDate = document.getElementById("dateHere").innerHTML = currentDate +"/" + month  + "/" + year;
+        }
+    </script>
 </body>
 </html>

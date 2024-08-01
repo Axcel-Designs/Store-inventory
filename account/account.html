@@ -6,18 +6,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Dashboard</title>
+    <title>Acccount</title>
 </head>
 <body>
     <header>
         <div class="profile-thumbnail"> $Yourname</div>
         <nav>
             <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="../chart/index.html">Chart</a></li>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="../chart/chart.html">Chart</a></li>
                 <li><a href="../records/product-records/index.html">Records</data></a></li>
-                <li><a href="../account/index.html">Account</a></li>
-                <!-- <li><a href="#">logout</a></li> -->
+                <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
         <div id="ham">
@@ -30,31 +29,22 @@
             <P>Date: <span id="dateHere"></span></P> 
         </div>
         <section>
-            <div class="board">
-                <h4>Number of Products</h4>
-                <h4>
-                    <span id="total-rev">0</span>
-                </h4>
+            <div class="profile-pic">
+                <input type="file" name="profile-img" id="profile-img">
             </div>
-            <div class="board">
-                <h4>Total costs of Products</h4>
-                <h4>
-                    <span>₦ </span><span id="total-rev">0</span>
-                </h4>
+            <div class="prfl-full-name">
+                <center>$your Name</center>
             </div>
-            <div class="board">
-                <h4>Total revenue</h4>
-                <h4>
-                    <span>₦ </span><span id="total-rev">0</span>
-                </h4>
-            </div>
-            <div class="dashboard-btn">
-                <button class="chart/index.html">chart</button>
+            <div><p>Username:</p></div>
+            <div><p>Email:</p></div>
+
+            <button><a href="../signup/edit-profile.html">Edit Profile</a></button>
+            <button class="delete">Delete Account</button>
+            <button class="logout"><a href="../index.html">Logout</a></button>
             </div>
         </section>
     </main>
     <br>
-
     <footer>
         Acha Kelechi Excel |<a href="#"> axceldesigns@gmail.com</a>
     </footer>
