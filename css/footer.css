@@ -16,7 +16,7 @@ footer{
     .footer-tp{
         display: flex;
         margin: 2vw;
-        padding: 2vh 2VW;
+        padding: 1vh 2VW;
         justify-content: space-between;
         ul{
             border-right:1px solid ;
@@ -31,7 +31,7 @@ footer{
     .footer-btm{
         border-top: 1px solid rgb(211, 195, 195);
         text-align: center;
-        padding: 3vh 0 2vh 0;
+        padding: 2vh 0 1vh 0;
     }
 }
 
