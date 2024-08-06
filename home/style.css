@@ -1,8 +1,6 @@
 *{ margin: 0; padding: 0;  list-style: none; text-decoration: none; font-family: poppins; }
 h3,h4,h5,h6,span{ font-family: sans-serif;}
 button{ padding: 1px 1.5vw; border-radius: 3vw;  cursor: pointer;}
-button:active{transform: scale(1.1,1.1);  border: 3px solid red;}
-
 :root{
     --white:#fff;
     --black:#000;
@@ -27,7 +25,7 @@ header{
     }
 }
 /* body */
-.hero{
+nav{
     box-sizing: border-box;
     display: flex;
     padding: 2vh 5vw;
@@ -45,6 +43,7 @@ header{
         color: var(--colr2);
         border: 2px solid white;
     }
+    .logn-btn:active,.signp-btn:active{ border: 2px solid black; }
 }
 
 /* body */
@@ -60,8 +59,7 @@ header{
     height:75vh;
     padding: 2vh 2vw;
     background-color: var(--colr3);
-
-    p{font-size: xx-large;}
+    p{font-size: 4rem;}
 }
 main{ width:90%; margin: auto; min-height: 40vh;}
 
