@@ -4,70 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dashboard</title>
 </head>
 <body>
     <header>
-        <div class="profile-thumbnail"> $Yourname</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="chart/chart.html">Chart</a></li>
-                <li><a href="records/product-records/index.html">Records</data></a></li>
-                <li><a href="account/account.html">Account</a></li>
-            </ul>
+        <div class="logo">
+            <i class="fa-solid fa-shop"></i>
+            <h4> Shop Tracker</h4>
+        </div>
+        <nav class="hero">
+            <a href="login/login.html"><button class="logn-btn">Login</button></a>
+            <a href="signup/signup.html"><button class="signp-btn">Signup</button></a>
         </nav>
-        <div id="ham">
-            <img src="" alt="ham">
-        </div>   
     </header>
-    <div class="banner-container">
-        <br>
+    <picture>
         <div class="banner">
-            <P>Date: <span id="dateHere"></span></P> 
-        </div>
-        <div class="hero">
-            <div></div>
             <div>
-                <a href="login/login.html"><button>login</button></a>
-            </div>
-        </div>
-    </div>
-    <br>   
-    <article>
-        <div class="wlm-back">
-            <h4>WELCOME BACK</h4>
-            <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error debitis vel voluptatibus commodi cumque magnam voluptatum corrupti, inventore aliquid eveniet dolore incidunt, repudiandae, fuga nesciunt veritatis architecto aperiam amet minus!</p>
+                <i class="fa-solid fa-shop"></i>
+                <h4>Shop <span>Inventory</span></h4>
             </div>           
         </div>
-    </article>
+    </picture>
+    <!-- main -->
     <main>
-        <section>
-            <div class="board">
-                <h4>Number of Products</h4>
-                <h4>
-                    <span id="total-rev">0</span>
-                </h4>
-            </div>
-            <div class="board">
-                <h4>Total costs of Products</h4>
-                <h4>
-                    <span>₦ </span><span id="total-rev">0</span>
-                </h4>
-            </div>
-            <div class="board">
-                <h4>Total revenue</h4>
-                <h4>
-                    <span>₦ </span><span id="total-rev">0</span>
-                </h4>
-            </div>
-            <div class="dashboard-btn">
-                <button><a href="chart/chart.html">Add Product</a></button>
-            </div>
-        </section>
         <article>
             <br>
             <div class="inner">
@@ -92,25 +52,25 @@
                     </ul>
                 </div>
                 <div class="footr-rgt">
-                    <p>This is a shore inventory application that keeps track of the product, it also provides a robust range of set of storing the information. </p>
-                    <p>Version beta 3.082</p>
+                    <article>
+                        <p>This is a shore inventory application that keeps track of the product, it also provides a robust range of set of storing the information. </p>
+                        <p>Version beta 3.082</p>
+                    </article>
+                    <div class="newsletter">
+                        <label for="footr-mail"><center> Get Newsletter</center></label><br>
+                        <input type="text" name="footr-mail" placeholder="Enter Your Email">
+                        <button>Subcribe</button>
+                    </div>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-btm">
-                <P>Acha Kelechi Excel |<a href="#"> axceldesigns@gmail.com</a></P>
-            </div>
+            </div> 
+        <div class="footer-btm">
+            <P>Acha Kelechi Excel |<a href="#"> axceldesigns@gmail.com</a></P>
+        </div>
     </footer>
-    <script>
-        theDate();
-        function theDate(){
-            var date = new Date();
-            var months = [0,1,2,3,4,5,7,8,9,10,11,12];
-            var currentDate = date.getDate();
-            var month = months[date.getMonth()];
-            var year = date.getFullYear();
-             
-            var todaysDate = document.getElementById("dateHere").innerHTML = currentDate +"/" + month  + "/" + year;
-        }
-    </script>
 </body>
 </html>

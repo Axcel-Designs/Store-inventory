@@ -1,0 +1,120 @@
+h3,h4,h5,h6,span{font-family: sans-serif; color: var(--colr);}
+:root{
+    --white:#fff;
+    --black:#000;
+    --colr:#234;
+    --colr2:rgb(248, 235, 235);
+    --colr3:rgb(126, 133, 126);
+    --colr4: rgb(231, 231, 231);
+}
+/* body */
+/* cheecker ".banner" in directory ../css/header.css */
+.hero{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 2vh 5vw;
+    justify-content: space-between;
+    background-color: white;
+    button {
+        padding: 1vh 1.5vw;
+        cursor: pointer;
+        border: 2px solid var(--colr);
+        align-self: flex-end;
+        border-radius: 3vw;
+    }
+    button:hover{
+        background-color: var(--colr);
+        color: var(--colr2);
+        border: 2px solid var(--colr3) ;
+    }
+}
+body{    background-color: var(--colr);}
+.wlm-back{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2vh 2vw;
+    background-color: var(--colr);
+    color:var(--white);
+    h4{ color: var(--white); margin-bottom: 3vh;    }
+    p{color: var(--white);}
+}
+section{
+    position: relative;
+    animation: dance 1.5s ease-in-out 15s 2 normal;
+    box-sizing:border-box ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 5vh auto 0 auto;
+    background-color: aqua;
+    background-image:linear-gradient(to bottom , rgb(248, 235, 235), rgb(126, 133, 126), rgb(231, 231, 231));
+    padding: 2vw 1vw;
+    border-radius: 15px;
+    .board{
+        padding: 1vw;
+        width: 200px;
+        background-color: var(--colr4);
+        box-shadow:var(--colr4) 0 0 25px;
+        border-radius: 2vw;
+    }
+    .dashboard-btn{
+        padding: 1vw;
+        width: fit-content;
+        button{
+            background-color:black;
+            margin: auto;
+            padding: .5vh 1.5vw;
+            cursor: pointer;
+            border: none;
+            border-radius: 2vw;
+            a{color: white;}
+        }
+        button:hover{background-color: beige; a{color: black; }}
+        button:active{transform: scale(1.1,1.1);}
+    }
+}
+@keyframes dance {
+    0%{
+        top: 10px;
+    }
+    50%{
+        top:20vh;
+        transform: rotatex(90deg);
+    }
+    100%{
+        top: 10px;
+    }
+}
+
+/* media queries */
+@media only screen and (min-width:1245px){
+/*  */
+}
+@media only screen and (min-width:1080px) and (max-width:1244px) {
+    section{  padding: 2vw 1vw;
+        .board, .dashboard-btn{margin: 2vw 9vw}
+    }
+}
+@media only screen and (min-width:721px ) and (max-width:1079px){
+      section{  padding: 1vw 2vw; 
+        .board, .dashboard-btn{margin: 2vw 2vw}    
+    }   
+}
+@media only screen and (max-width:720px) {
+    section{  padding: 4vw 5vw;
+        .board, .dashboard-btn{margin:1vw 1vw;}
+    }
+}
+@media  screen and (max-width:559px) {
+    .hero{
+        button{padding: 0.2vh 1.5vw}
+    }
+    section{
+        justify-content: space-around;
+        flex-flow: column wrap; 
+        gap: 1vh;
+        align-items: center;
+        .dashboard-btn button{ margin: 0vw auto; }
+    }   
+}
