@@ -105,31 +105,23 @@ footer{
     font-size: small; 
     a,p,label{color: var(--colr3);}
     .footer-tp{
+        padding: 4vh 2VW;
         display: flex;
-        margin: 2vw;
-        padding: 1vh 2VW;
+        flex-wrap: wrap;
         justify-content: space-between;
+        gap: 2vw;
+        div{width: 150px;}
+        label,input{margin: 2vh 0; padding: 0;}      
         ul{
             border-right:1px solid ;
-            margin: 2vh 0 2vh 0;
             display: flex;
             flex-flow: column;
             gap: 0.5vh;
             li{width: 100px;}
         }
-        .footr-rgt{ 
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0vh 2vw; 
-            margin: 2vh 0 0 0;
-            display:flex;
-            gap: 2vw;
-            label,center{margin: 0; padding: 0;}      
-        }
         .social-links {
             display: flex;
             justify-content: center;
-            align-items: center;
             color: #fff;
             font-size: 1.75em;
             gap:2vw;
@@ -157,15 +149,12 @@ footer{
 @media only screen and (max-width:575px) {
     footer{
         .footer-tp{
-            flex-wrap: wrap;
+            flex-flow: wrap column;
             justify-content: center;
-            .footr-rgt{
-                text-align: center;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
-                gap: 2vh;
-            }
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2vh;
             ul{
                 border: none;
             }

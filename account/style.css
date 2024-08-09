@@ -18,17 +18,14 @@ section{
     padding: 2vw 1vw;
     border-radius: 15px;
     .profile-pic{
-        display: flex;
-    }
-    input[type=file]{
-        width:15vw;
-        background-color: white;
-        height: 15vw;
         margin: auto;
-        align-items: center; 
-        border-radius: 100%;
+        img{
+            max-width: 200px;
+            border-radius: 50%;
+            margin: auto;
+        }
     }
-    div{margin: 9vh 0;}
+    div{margin: 2vh 0;}
 }
     button {
         border: none;
