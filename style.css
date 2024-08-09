@@ -124,17 +124,15 @@ footer{
             margin: 2vh 0 0 0;
             display:flex;
             gap: 2vw;
-            label,center{margin: 0; padding: 0;}
-        
+            label,center{margin: 0; padding: 0;}      
         }
-
         .social-links {
             display: flex;
             justify-content: center;
             align-items: center;
             color: #fff;
-            font-size: 1.5em;
-            gap:1vw;
+            font-size: 1.75em;
+            gap:2vw;
         }
     }
     .footer-btm{
