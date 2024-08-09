@@ -41,7 +41,6 @@ body{    background-color: var(--colr);}
 }
 section{
     position: relative;
-    animation: dance 1.5s ease-in-out 15s 2 normal;
     box-sizing:border-box ;
     display: flex;
     flex-wrap: wrap;
@@ -72,18 +71,6 @@ section{
         }
         button:hover{background-color: beige; a{color: black; }}
         button:active{transform: scale(1.1,1.1);}
-    }
-}
-@keyframes dance {
-    0%{
-        top: 10px;
-    }
-    50%{
-        top:20vh;
-        transform: rotatex(90deg);
-    }
-    100%{
-        top: 10px;
     }
 }
 
