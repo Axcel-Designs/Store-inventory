@@ -49,10 +49,10 @@ section{
     background-color: aqua;
     background-image:linear-gradient(to bottom , rgb(248, 235, 235), rgb(126, 133, 126), rgb(231, 231, 231));
     padding: 2vw 1vw;
-    border-radius: 15px;
+    border-radius: 15px;a
     .board{
-        padding: 1vw;
-        width: 200px;
+        padding: 1vw 1vh 1vh 2vw;
+        width: 250px;
         background-color: var(--colr4);
         box-shadow:var(--colr4) 0 0 25px;
         border-radius: 2vw;
