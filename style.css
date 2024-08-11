@@ -80,13 +80,15 @@ nav{
 main{ width:90%; margin: auto; }
 section{
     margin: auto;
-    h4{text-align: center;color: var(--colr);}
-    .choose-container{
+    h1{text-align: center;color: var(--colr);}
+    .box-container{
         text-align: center;
-        background-color: rgb(131, 120, 120);
         padding: 2.5vw;
     }
-    .choose{
+    .choose-container{
+        background-color: rgb(131, 120, 120);
+    }
+    .box{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -96,7 +98,7 @@ section{
     article{
         width:40vw;
         background-color: var(--colr3);
-        height: 40vh;
+        height: 25vh;
         box-shadow: 2vw 2vw 5vw;
         padding: 1vw;
         overflow: hidden;

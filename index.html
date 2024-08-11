@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -31,33 +32,33 @@
     <main>
         <section>
             <div class="welcome">
-                <h4>Welcome Store Inventory</h4>
-                <p>Your one-stop shop for all your inventory management needs. Whether you’re running a small business or managing a large warehouse, we’ve got you covered with a seamless, intuitive inventory management solution.</p>
+                <h1 class="text-4xl">Welcome Store Inventory</h1>
+                <p class="text-xl text-slate-800">Your one-stop shop for all your inventory management needs. Whether you’re running a small business or managing a large warehouse, we’ve got you covered with a seamless, intuitive inventory management solution.</p>
             </div>
             <br>
-            <div class="choose-container">
-                <h2>Why Choose Us?</h2>
+            <div class=" box-container choose-container">
+                <h2 class="text-2xl">Why Choose Us?</h2>
                 <br>
-                <div class="choose">
+                <div class="choose box">
                     <article>
-                        <h4>Easy to Use:</h4>
+                        <h4 class="text-xl leading-loose">Easy to Use:</h4>
                         <p>Our user-friendly interface makes managing your inventory a breeze, so you can focus on what really matters—growing your business.
                             </p>  
                     </article>
                     <article>
-                        <h4> Real-Time Updates:</h4>
+                        <h4 class="text-xl leading-loose"> Real-Time Updates:</h4>
                         <p>
                             Stay up-to-date with real-time inventory tracking and notifications, ensuring you never run out of stock.
                             </p>  
                     </article>
                     <article>
-                        <h4>Customizable Solutions:</h4>
+                        <h4 class="text-xl leading-loose">Customizable Solutions:</h4>
                         <p>
                             Tailor our system to fit your unique needs with customizable features and settings.
                         </p>  
                     </article>
                     <article>
-                        <h4>Comprehensive Reporting:</h4>
+                        <h4 class="text-xl leading-loose">Comprehensive Reporting:</h4>
                             <p>
                                 Get detailed insights into your inventory levels, sales trends, and more with our powerful reporting tools.
                             </p>  
@@ -65,30 +66,38 @@
                 </div>
             </div>
             <br>
-            <h2>Features:</h2>
-            <div class="features">
-                <article>
-                    <h4>Inventory Tracking</h4>
-                    <P>Keep an accurate count of your stock with minimal effort.</P>
-                </article>
-                <article>
-                    <h4>Order Management</h4>
-                    <p>Streamline your order process from start to finish.</p>
-                </article>
-                <article>
-                    <h4>Supplier Management:</h4>
-                    <p>Easily manage your supplier information and purchase orders.</p>
-                </article>
-                <article>
-                    <h4>User Roles and Permissions</h4>
-                    <p>Control access and functionality for different users with customizable roles.</p>
-                </article>
+            <hr>
+            <div class="box-container features-container">
+                <h2 class="text-2xl">Features:</h2>
+                <br>
+                <div class="features box">
+                    <article>
+                        <i class="fa-solid fa-warehouse text-4xl"></i>
+                        <h4 class="text-xl leading-loose">Inventory Tracking</h4>
+                        <P>Keep an accurate count of your stock with minimal effort.</P>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-list-check text-4xl"></i>
+                        <h4 class="text-xl leading-loose">Order Management</h4>
+                        <p>Streamline your order process from start to finish.</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-bars-progress text-4xl"></i>
+                        <h4 class="text-xl leading-loose">Supplier Management</h4>
+                        <p>Easily manage your supplier information and purchase orders.</p>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-user text-4xl"></i>
+                        <h4 class="text-xl leading-loose">User Roles and Permissions</h4>
+                        <p>Control access and functionality for different users with customizable roles.</p>
+                    </article>
+                </div>
             </div>
         </section>
         <br>
-        <section class="get-started">
-            <h4>Get Started Today!</h4>
-            <p>Experience the difference with store. Sign up now for a free trial and see how our inventory management system can transform the way you do business.</p>
+        <section class="get-started ">
+            <h1 class="text-4xl animate-pulse">Get Started Today!</h1>
+            <p class="text-xl">Experience the difference with store. <a href="signup/signup.html">Sign up</a> now for a free trial and see how our inventory management system can transform the way you do business.</p>
         </section>
     </main>
     <br>
