@@ -37,7 +37,7 @@
     </div>
     <br>   
     <article>
-        <div class="wlm-back">
+        <div class="wlm">
             <h4>WELCOME </h4>
             <div>
                 <p>Here’s a quick snapshot of your inventory and recent activities. Use this dashboard to stay on top of your store’s performance, manage your inventory, and take quick actions.
@@ -46,7 +46,7 @@
         </div>
     </article>
     <main>
-        <section>
+        <section class="board-container">
             <div class="board">
                 <h4>Number of Products</h4>
                 <h4>
@@ -81,15 +81,34 @@
                 <button><a href="../chart/chart.html">Add Product</a></button>
             </div>
         </section>
-        <article>
-            <br>
-            <div class="inner">
-                <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error debitis vel voluptatibus commodi cumque magnam voluptatum corrupti, inventore aliquid eveniet dolore incidunt, repudiandae, fuga nesciunt veritatis architecto aperiam amet minus!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, libero sequi maxime totam itaque tempora dolor, voluptas expedita inventore architecto adipisci iure neque, quidem saepe. Corrupti dolorem nisi sint incidunt?</p>
-                </div>           
+        <br>
+        <section>
+            <div>
+               <h3>Recent Activities</h3> 
             </div>
-        </article> 
+            <div>
+                <h3> Inventory Status</h3>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div>
+                <h3>Quick Actions</h3>
+            </div>
+            <div>
+                <h3>Charts and Graphs</h3>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div>
+                <h3>Notifications</h3>
+            </div>
+            <div>
+                <h3>Tips & Tricks</h3>
+            </div>
+        </section>
+        <br>
     </main>
     <br>
     <!-- footer -->
@@ -120,8 +139,7 @@
             var months = [0,1,2,3,4,5,7,8,9,10,11,12];
             var currentDate = date.getDate();
             var month = months[date.getMonth()];
-            var year = date.getFullYear();
-             
+            var year = date.getFullYear();            
             var todaysDate = document.getElementById("dateHere").innerHTML = currentDate +"/" + month  + "/" + year;
         }
     </script>
